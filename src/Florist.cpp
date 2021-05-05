@@ -1,6 +1,8 @@
 
 #include "../include/Florist.h"
 
-void Florist::acceptOrder(Person *, std::vector <std::string>) {
+Florist::Florist(std::string name) : name(name) {}
+
+void Florist::acceptOrder(Person*, std::vector <std::string>) {
 
 }

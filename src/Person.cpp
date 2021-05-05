@@ -1,5 +1,9 @@
-
 #include "../include/Person.h"
+
+Person::Person(std::string name):name(name) {
+
+}
+
 
 void Person::orderFlowers(Florist *, Person *, std::vector<std::string>) {
 
@@ -8,4 +12,5 @@ void Person::orderFlowers(Florist *, Person *, std::vector<std::string>) {
 void Person::acceptFlowers(FlowersBouquet *) {
 
 }
+
 

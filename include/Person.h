@@ -9,7 +9,10 @@
 
 class Person{
 public:
+    Person(std::string name);
+
     std::string name;
+
     void orderFlowers(Florist*, Person*, std::vector<std::string>);
     void acceptFlowers(FlowersBouquet*);
 };

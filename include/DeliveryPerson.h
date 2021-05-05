@@ -1,13 +1,17 @@
 #ifndef HW2_DELIVERYPERSON_H
 #define HW2_DELIVERYPERSON_H
 
-#include "Person.h"
+#include <iostream>
+
 #include "FlowersBouquet.h"
 
 class DeliveryPerson{
 public:
-    void deliver(Person*, FlowersBouquet*);
+    DeliveryPerson(std::string name);
 
+    void deliver(Person*, FlowersBouquet*);
+private:
+    std::string Person::name;
 };
 
 #endif //HW2_DELIVERYPERSON_H

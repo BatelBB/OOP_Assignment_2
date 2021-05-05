@@ -9,8 +9,12 @@
 
 class Wholesaler{
 public:
+    Wholesaler(std::string name);
+
     Grower* grower;
     FlowersBouquet* acceptOrder(std::vector<std::string>);
+private:
+    std::string Person::name;
 };
 
 #endif //HW2_WHOLESALER_H
