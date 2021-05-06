@@ -10,6 +10,8 @@
 class Person{
 public:
     Person(std::string name);
+    //destructor
+    ~Person();
 
     std::string name;
 

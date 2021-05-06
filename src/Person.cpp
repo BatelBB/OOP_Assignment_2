@@ -13,4 +13,8 @@ void Person::acceptFlowers(FlowersBouquet *) {
 
 }
 
+Person::~Person() {
+    delete this;
+}
+
 
