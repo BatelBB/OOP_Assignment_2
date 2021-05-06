@@ -14,7 +14,7 @@ void Person::acceptFlowers(FlowersBouquet *) {
 }
 
 Person::~Person() {
-    delete this;
+    delete this; //not sure about this
 }
 
 
