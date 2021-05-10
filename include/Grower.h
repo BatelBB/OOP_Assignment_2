@@ -7,14 +7,14 @@
 #include "Gardener.h"
 #include "FlowersBouquet.h"
 
-class Grower{
+class Grower: public Person{
 public:
-    Grower(std::string name);
+    Grower(std::string name, Gardner*);
 
-    Gardener* gardener;
+    std::string getName();
     FlowersBouquet* prepareOrder(std::vector<std::string>);
 private:
-    std::string Person::name;
+    Gardener* gardener;
 };
 
 #endif //HW2_GROWER_H

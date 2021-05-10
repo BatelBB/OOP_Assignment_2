@@ -5,16 +5,17 @@
 #include <iostream>
 #include "Person.h"
 
-class FlowersBouquet{
+class FlowersBouquet: public Person{
 public:
-    FlowersBouquet(std::string name);
+    FlowersBouquet(std::string name, Person*);
 
-    std::vector<std::string> bouquet;
-    bool is_arranged;
+    std::string getName();
+
     void arrange();
 
 private:
-    std::string Person::name;
+    std::vector<std::string> bouquet;
+    bool is_arranged;
 };
 
 #endif //HW2_FLOWERSBOUQUET_H

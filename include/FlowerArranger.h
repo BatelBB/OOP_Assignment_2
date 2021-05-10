@@ -6,13 +6,12 @@
 #include <iostream>
 #include "FlowersBouquet.h"
 
-class FlowerArranger {
+class FlowerArranger: public Person {
 public:
-    FlowerArranger(std::string name);
-
+    FlowerArranger(std::string name, std::vector<std::string>);
+    std::string getName();
     void arrangeFlowers(FlowersBouquet*);
 private:
-    std::string Person::name;
 };
 
 

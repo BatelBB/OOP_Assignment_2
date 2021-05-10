@@ -7,14 +7,14 @@
 #include "Grower.h"
 #include "FlowersBouquet.h"
 
-class Wholesaler{
+class Wholesaler: public Person{
 public:
-    Wholesaler(std::string name);
+    Wholesaler(std::string name, Grower*);
 
-    Grower* grower;
+    std::string getName();
     FlowersBouquet* acceptOrder(std::vector<std::string>);
 private:
-    std::string Person::name;
+    Grower* grower;
 };
 
 #endif //HW2_WHOLESALER_H

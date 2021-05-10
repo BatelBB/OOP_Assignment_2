@@ -4,19 +4,18 @@
 #include <vector>
 #include <iostream>
 
-#include "Florist.h"
-#include "FlowersBouquet.h"
+#include "Florist.h";
+#include "FlowersBouquet.h";
 
 class Person{
 public:
     Person(std::string name);
-    //destructor
-    ~Person();
 
-    std::string name;
-
+    virtual std::string getName();
     void orderFlowers(Florist*, Person*, std::vector<std::string>);
     void acceptFlowers(FlowersBouquet*);
+protected:
+    std::string name;
 };
 
 #endif //HW2_PERSON_H

@@ -5,13 +5,12 @@
 
 #include "FlowersBouquet.h"
 
-class DeliveryPerson{
+class DeliveryPerson: public Person{
 public:
-    DeliveryPerson(std::string name);
-
+    DeliveryPerson(std::string name, Person*);
+    std::string getName();
     void deliver(Person*, FlowersBouquet*);
-private:
-    std::string Person::name;
+
 };
 
 #endif //HW2_DELIVERYPERSON_H

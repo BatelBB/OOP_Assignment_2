@@ -1,8 +1,13 @@
 
 #include "../include/Florist.h"
 
-Florist::Florist(std::string name) : name(name) {}
+Florist::Florist(std::string name) : Person(name) {}
 
-void Florist::acceptOrder(Person*, std::vector <std::string>) {
+void Florist::acceptOrder(Person* person, std::vector <std::string> order) {
+    std::cout << getName() << " forwards the request to " << wholesaler->getName() << std::endl;
 
+}
+
+std::string Florist::getName() {
+    return "Florist " +Person::getName();
 }

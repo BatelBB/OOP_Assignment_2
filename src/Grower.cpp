@@ -1,9 +1,14 @@
 
 #include "../include/Grower.h"
 
-Grower::Grower(std::string name):name(name) {};
+Grower::Grower(std::string name, Gardener* gardener):Person(name) {}
 
-FlowersBouquet *Gardener::prepareOrder(std::vector<std::string>) {
-    return nullptr;
+std::string Grower::getName() {
+    return "Grower " + Person::getName();
 }
+
+FlowersBouquet *Grower::prepareOrder(std::vector<std::string> order) {
+    return nullptr;
+};
+
 

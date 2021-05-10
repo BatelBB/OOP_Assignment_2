@@ -8,17 +8,16 @@
 #include "DeliveryPerson.h"
 
 
-class Florist{
+class Florist: public Person{
 public:
     Florist(std::string name);
-
-    Wholesaler *wholesaler;
-    FlowerArranger *flowerArranger;
-    DeliveryPerson *deliveryPerson;
+    std::string getName();
     void acceptOrder(Person*, std::vector<std::string>);
 
 private:
-    std::string Person::name;
+    Wholesaler *wholesaler;
+    FlowerArranger *flowerArranger;
+    DeliveryPerson *deliveryPerson;
 };
 
 #endif //HW2_FLORIST_H
