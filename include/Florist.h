@@ -10,7 +10,7 @@
 
 class Florist: public Person{
 public:
-    Florist(std::string name);
+    Florist(std::string name, Wholesaler*, FlowerArranger*, DeliveryPerson*);
     std::string getName();
     void acceptOrder(Person*, std::vector<std::string>);
 

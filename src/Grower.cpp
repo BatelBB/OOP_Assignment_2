@@ -8,7 +8,10 @@ std::string Grower::getName() {
 }
 
 FlowersBouquet *Grower::prepareOrder(std::vector<std::string> order) {
+    std::cout << getName() << " forwards the request to " << gardener->getName() << std::endl;
     return nullptr;
+    //gardener->p
+
 };
 
 
