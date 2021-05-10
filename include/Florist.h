@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "Wholesaler.h"
-#include "Person.h"
+
 #include "FlowerArranger.h"
 #include "DeliveryPerson.h"
 

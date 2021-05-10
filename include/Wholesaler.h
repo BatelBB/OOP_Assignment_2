@@ -6,6 +6,7 @@
 
 #include "Grower.h"
 #include "FlowersBouquet.h"
+#include "Person.h"
 
 class Wholesaler: public Person{
 public:

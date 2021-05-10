@@ -4,8 +4,8 @@
 #include <vector>
 #include <iostream>
 
-#include "Florist.h";
-#include "FlowersBouquet.h";
+class Florist;
+class FlowersBouquet;
 
 class Person{
 public:

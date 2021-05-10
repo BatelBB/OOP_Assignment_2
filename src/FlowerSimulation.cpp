@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../include/Person.h"
-
+#include "../include/Florist.h"
 int main(){
     Florist* fred = new Florist("Fred");
     Person* chris = new Person("Chris");
