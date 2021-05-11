@@ -4,6 +4,7 @@
 
 
 #include "FlowersBouquet.h"
+#include "Person.h"
 
 class Gardener: public Person{
 public:
@@ -11,7 +12,6 @@ public:
 
     FlowersBouquet* prepareBouquet(std::vector<std::string>);
 
-    FlowersBouquet *prepareOrder(std::vector<std::string>);
     std::string getName();
 };
 

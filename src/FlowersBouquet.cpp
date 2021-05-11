@@ -1,12 +1,13 @@
 #include "../include/FlowersBouquet.h"
 
-FlowersBouquet::FlowersBouquet(std::string name, Person* person) : Person(name) {}
+FlowersBouquet::FlowersBouquet(std::vector<std::string> bouquet) : bouquet(bouquet) {}
+FlowersBouquet::~FlowersBouquet() {
 
+}
 void FlowersBouquet::arrange() {
     is_arranged = true;
 }
 
-std::string FlowersBouquet::getName() {
-    return "Flowers Bouquet " + Person::getName();
-}
+
+
 

@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include "FlowersBouquet.h"
+#include "Person.h"
 
 class FlowerArranger: public Person {
 public:

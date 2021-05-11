@@ -3,13 +3,14 @@
 
 
 #include <iostream>
-#include "Person.h"
+#include <vector>
 
-class FlowersBouquet: public Person{
+class FlowersBouquet{
 public:
-    FlowersBouquet(std::string name, Person*);
+    FlowersBouquet(std::vector<std::string>);
 
-    std::string getName();
+//destructor
+~FlowersBouquet();
 
     void arrange();
 
