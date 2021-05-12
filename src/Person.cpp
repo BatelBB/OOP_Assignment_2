@@ -11,7 +11,10 @@ void Person::orderFlowers(Florist * florist, Person * person, std::vector<std::s
 }
 
 void Person::acceptFlowers(FlowersBouquet * flowersBouquet) {
+    //Robin accepts the flowers: Roses, Violets, Gladiolus.
+    std::cout << getName() << " accepts the " << flowersBouquet->getName() << "." << std::endl;
 
+    delete flowersBouquet;
 }
 
 

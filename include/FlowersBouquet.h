@@ -9,6 +9,8 @@ class FlowersBouquet{
 public:
     FlowersBouquet(std::vector<std::string>);
 
+    virtual std::string getName();
+
 //destructor
 ~FlowersBouquet();
 
