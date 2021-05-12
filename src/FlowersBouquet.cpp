@@ -1,9 +1,9 @@
 #include "../include/FlowersBouquet.h"
 
-FlowersBouquet::FlowersBouquet(std::vector<std::string> bouquet) : bouquet(bouquet) {}
-FlowersBouquet::~FlowersBouquet() {
-
+FlowersBouquet::FlowersBouquet(std::vector<std::string> bouquet) : bouquet(bouquet) {
+    is_arranged = false;
 }
+
 void FlowersBouquet::arrange() {
     is_arranged = true;
 }

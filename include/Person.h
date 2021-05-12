@@ -16,6 +16,7 @@ public:
     void acceptFlowers(FlowersBouquet*);
 protected:
     std::string name;
+    std::string orderToString(std::vector<std::string> order);
 };
 
 #endif //HW2_PERSON_H

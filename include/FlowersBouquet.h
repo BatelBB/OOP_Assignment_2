@@ -11,8 +11,7 @@ public:
 
     virtual std::string getName();
 
-//destructor
-~FlowersBouquet();
+
 
     void arrange();
 
